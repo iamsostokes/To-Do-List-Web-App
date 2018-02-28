@@ -1,0 +1,56 @@
+
+
+
+#bgDiv {
+    background: linear-gradient(pink, hotpink);
+    min-width: 350px;
+    max-width: 950px;
+    height: 500px;
+    padding-top: 150px;
+}
+
+#formContainer {
+    background: white;
+    min-width: 225px;
+    max-width: 550px;
+    height: 200px;
+    display: table;
+    margin: auto;
+    bottom: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border: double 1px;
+}
+
+
+#filterInput {
+    width: 300px;
+    height: 25px;
+    
+}
+
+#enterInput {
+    width: 300px;
+    height: 25px;
+    
+}
+
+button {
+    background-color: hotpink;
+    width: 306px;
+    height: 25px;
+    margin-top: 10px;
+    color: ghostwhite;
+    font-size: 20px;
+}
+
+#close-button {
+    float: right;
+
+}
+
+li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
