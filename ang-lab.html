@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="ang-lab.css" rel="stylesheet" type="text/css" />
+</head>
+<body ng-controller="FormController as form">
+    <div id="bgDiv">
+        
+        
+        
+        <div id="formContainer">
+            
+        <h1>TODO List</h1>
+        <h4>A place to store the things you have to do!</h4>
+
+
+            <input type="text" ng-model="form.search" id="filterInput" placeholder="filter your to do">
+            <br>
+            <li ng-repeat="item in form.toDo | filter: form.search">
+                </span><span>{{item}}</span><span ng-click="form.remove(item)" id="close-button" > X</span>
+            </li>
+            <br>
+            <input type="text" ng-model="form.newTask" id="enterInput" placeholder="Add your to-dos" ng-keyup="$event.keyCode == 13 && form.addToDo() "/>
+            <br>
+            <button ng-click="form.addToDo()">Add</button>
+            
+        </div>
+
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
+    <script src="moduleApp.js"></script>
+    <script src="form-controller.js"></script>
+</body>
+</html>
