@@ -1,0 +1,14 @@
+<div id="formContainer">
+
+    <a href='#!/' id="backButton">←Go Back</a>        
+    <h1>TODO List</h1>
+    <h4>A place to store the things you have to do!</h4>
+    <input type="text" ng-model="$ctrl.search" id="filterInput" placeholder="filter your to do">
+    <br>
+    <list to-do="$ctrl.toDo" search="$ctrl.search"></list>
+    <br>
+    <input type="text" ng-model="$ctrl.newTask" id="enterInput" placeholder="Add your to-dos" ng-keyup="$event.keyCode == 13 && $ctrl.addToDo() "/>
+    <br>
+    <button ng-click="$ctrl.addToDo()">Add</button>
+        
+</div>
