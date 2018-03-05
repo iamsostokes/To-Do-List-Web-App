@@ -1,12 +1,6 @@
-
-
-
-#bgDiv {
-    background: linear-gradient(pink, hotpink);
-    min-width: 350px;
-    max-width: 950px;
-    height: 500px;
-    padding-top: 150px;
+body {
+    background: linear-gradient(to right, pink, hotpink);
+    height: 100%;   
 }
 
 #formContainer {
@@ -15,7 +9,7 @@
     max-width: 550px;
     height: 200px;
     display: table;
-    margin: auto;
+    margin: 120px auto 0;
     bottom: auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -54,3 +48,26 @@ li {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+#welcomeDiv {
+    background-color: ghostwhite;
+    width: 500px;
+    height: 150px;
+    border: solid 1px;
+    margin: 250px auto 0;
+    padding-left: 25px;
+    
+    
+}
+
+#enterButton {
+    float: right;
+    padding-right: 50px;
+    color: deeppink;
+}
+
+#backButton {
+    color: deeppink;
+}
+
+
